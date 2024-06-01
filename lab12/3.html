@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+<style>
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .tabs li {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    color: #4CAF50;
+    border-bottom: none;
+  }
+  .tabs li.active {
+    background-color: #4CAF50;
+    color: #ccc;
+  }
+  .tab-content {
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    padding: 20px;
+    display: none;
+  }
+  .tab-content.active {
+  display: block;
+}
+</style>
+</head>
+<body>
+<ul class="tabs">
+    <li class="tab active" data-tab="tab1">JavaScript</li>
+    <li class="tab" data-tab="tab2">Jquery</li>
+    <li class="tab" data-tab="tab3">DOM</li>
+    <li class="tab" data-tab="tab4">CSS</li>
+</ul>
+<div id="tab1" class="tab-content active">
+  Javascript - прототипно-ориентированный сценарный язык программирования. Является реализацией языка ECMAScript.</p>
+  Javascript обычно используется как встраиваемый язык для программного доступа к объектам приложений. Наиболее широкое применение находит в браузерах как язык сценариев для придания интерактивности веб-страницам.
+</div>
+<div id="tab2" class="tab-content">
+    jQuery — набор функций JavaScript, фокусирующийся на взаимодействии JavaScript и HTML. Библиотека jQuery помогает легко получать доступ к любому элементу DOM,
+    обращаться к атрибутам и содержимому элементов DOM, манипулировать ими. Также библиотека jQuery предоставляет удобный API для работы с AJAX.
+    Разработка jQuery ведётся командой добровольцев на пожертвования.
+</div>
+<div id="tab3" class="tab-content">
+    DOM — это не зависящий от платформы и языка программный интерфейс, позволяющий программам и скриптам получить доступ к содержимому HTML-, XHTML- и XML-документов, а также изменять содержимое, структуру и оформление таких документов.<br><br>
+    Модель DOM не накладывает ограничений на структуру документа. Любой документ известной структуры с помощью DOM может быть представлен в виде дерева узлов, каждый узел которого представляет собой элемент, атрибут, текстовый, графический или любой другой объект. Узлы связаны между собой отношениями «родительский-дочерний».
+</div>
+<div id="tab4" class="tab-content">
+    CSS (англ. Cascading Style Sheets «каскадные таблицы стилей») — формальный язык декодирования и описания внешнего вида документа (веб-страницы), написанного с использованием языка разметки (чаще всего HTML или XHTML). Также может применяться к любым XML-документам, например, к SVG или XUL.
+</div>
+<script src="3.js"></script>
+
+</body>
+</html>

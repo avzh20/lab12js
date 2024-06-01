@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aue::before {
+    content: "";
+	background-image: url(background.jpg);
+	background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.7;
+}
+
+.picture {
+    position: relative;
+    float: left;
+    display: inline-flex;
+}
+
+.name {
+    position: relative;
+    margin-left: 50px;
+    color: black;
+    font-size: 20px;   
+    padding-top: 14px;
+    padding-bottom: 13.1px;
+    padding-left: 5px;
+}
+
+.bottom {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height: 50px;
+}
+
+.callme {
+    float: right;
+    display: inline-flex;
+}
+
+.zadania {
+    position: relative;
+    margin-left: 150px;
+    margin-right: 1000px;
+    margin-top: 250px;
+    height: 200px;
+}
+
+.li0 {
+    list-style-type: none;
+    display: inline-block;
+    border: solid;
+    border-width: 2px;
+    border-color: black;
+    text-decoration: none;
+    height: 100px;
+    width: 200px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    position: relative;
+    color: rgb(255, 96, 96);
+}
+
+.li1 { 
+    position: absolute;
+    height: 10px;
+    width: 200px;
+    transition: 0.5s linear;
+    transition-property: height;
+} 
+
+.li0:hover .li1 { 
+    background-color: white; 
+    color: black;
+    height: 50px;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+}
+
+.li01 {
+    position: absolute;
+    color: black;
+    opacity: 0;
+    transition: 0.5s linear;
+}
+
+.li0:hover .li01 {
+    opacity: 1;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    padding-left: 50px;
+}
+
+.bb {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;   
+    position: absolute;
+}
+
+.aoao {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;   
+}
+
+.aoao:hover {
+    color: rgb(129, 48, 48);
+}
